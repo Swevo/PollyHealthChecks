@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -17,10 +17,22 @@
     <RepositoryUrl>https://github.com/Swevo/PollyHealthChecks</RepositoryUrl>
     <PackageProjectUrl>https://github.com/Swevo/PollyHealthChecks</PackageProjectUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <Copyright>Copyright © 2025 Justin Bannister</Copyright>
+    <Copyright>Copyright (c) 2025 Justin Bannister</Copyright>
+
+    <!-- SourceLink + reproducible builds -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <Deterministic>true</Deterministic>
+    <ContinuousIntegrationBuild Condition="'$(CI)' == 'true'">true</ContinuousIntegrationBuild>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.*">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
     <PackageReference Include="Polly.Core" Version="8.*" />
     <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="8.*" />
   </ItemGroup>
