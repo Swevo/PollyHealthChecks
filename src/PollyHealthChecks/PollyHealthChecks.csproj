@@ -18,6 +18,7 @@
     <PackageProjectUrl>https://github.com/Swevo/PollyHealthChecks</PackageProjectUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Copyright>Copyright (c) 2025 Justin Bannister</Copyright>
+    <PackageIcon>icon.png</PackageIcon>
 
     <!-- SourceLink + reproducible builds -->
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
@@ -38,7 +39,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\..\icon.png" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>
+
