@@ -47,7 +47,7 @@ public static class HealthChecksBuilderExtensions
         IEnumerable<string>? tags = null)
     {
         ArgumentNullException.ThrowIfNull(builder);
-        ArgumentException.ThrowIfNullOrWhiteSpace(name);
+        if (string.IsNullOrWhiteSpace(name)) throw new ArgumentException("Value cannot be null or whitespace.", nameof(name));
         ArgumentNullException.ThrowIfNull(stateProvider);
 
         return builder.Add(new HealthCheckRegistration(
