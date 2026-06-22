@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFrameworks>net6.0;net8.0;net9.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
@@ -11,7 +11,10 @@
     <Version>1.0.0</Version>
     <Authors>Justin Bannister</Authors>
     <Description>ASP.NET Core health checks for Polly v8 circuit breakers. Exposes circuit breaker state (Closed/HalfOpen/Open/Isolated) as Healthy/Degraded/Unhealthy health check results.</Description>
-    <PackageTags>polly;healthchecks;circuit-breaker;resilience;aspnetcore;monitoring;observability</PackageTags>
+    <PackageTags>polly;healthchecks;circuit-breaker;resilience;aspnetcore;monitoring;observability;kubernetes;k8s;liveness;readiness;health-probe;dotnet</PackageTags>
+    <Title>PollyHealthChecks — ASP.NET Core health checks for Polly v8 circuit breakers</Title>
+    <PackageSummary>Expose Polly v8 circuit breaker state as /health endpoint responses — ready for Kubernetes liveness and readiness probes, load balancers, and monitoring dashboards.</PackageSummary>
+    <PackageReleaseNotes>1.0.2: Added net6.0 and net9.0 targets; improved discoverability tags including Kubernetes health probe keywords.</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/Swevo/PollyHealthChecks</RepositoryUrl>
