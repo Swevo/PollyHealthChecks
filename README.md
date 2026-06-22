@@ -1,5 +1,7 @@
 # PollyHealthChecks
 
+<img src="icon.png" width="100" align="right" />
+
 [![NuGet](https://img.shields.io/nuget/v/PollyHealthChecks.svg)](https://www.nuget.org/packages/PollyHealthChecks)
 [![CI](https://github.com/Swevo/PollyHealthChecks/actions/workflows/build.yml/badge.svg)](https://github.com/Swevo/PollyHealthChecks/actions/workflows/build.yml)
 
