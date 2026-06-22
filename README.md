@@ -93,6 +93,14 @@ services.AddHealthChecks()
     .AddPollyCircuitBreaker("auth-api", authStateProvider, tags: ["ready"]);
 ```
 
+## Support
+
+If PollyHealthChecks is useful in your Kubernetes or monitoring setup, consider supporting the project:
+
+[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-pink?logo=github)](https://github.com/sponsors/Swevo)
+
+> 💼 **Need .NET / cloud-native help?** Visit [solidqualitysolutions.com](https://solidqualitysolutions.com/) for consulting and architecture services.
+
 ## License
 
 MIT
