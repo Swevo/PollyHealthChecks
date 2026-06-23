@@ -1,3 +1,4 @@
+## Ignore Build and Release Outputs
 nupkgs/
 bin/
 obj/
