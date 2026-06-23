@@ -8,13 +8,15 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
 
     <PackageId>PollyHealthChecks</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.6</Version>
     <Authors>Justin Bannister</Authors>
-    <Description>ASP.NET Core health checks for Polly v8 circuit breakers. Exposes circuit breaker state (Closed/HalfOpen/Open/Isolated) as Healthy/Degraded/Unhealthy health check results.</Description>
-    <PackageTags>polly;healthchecks;circuit-breaker;resilience;aspnetcore;monitoring;observability;kubernetes;k8s;liveness;readiness;health-probe;dotnet</PackageTags>
+    <Description>ASP.NET Core health checks for Polly v8 circuit breakers — expose circuit-breaker state (Closed, HalfOpen, Open, Isolated) as /health endpoint responses. One line of registration. Works with Kubernetes liveness/readiness probes, Azure App Service health checks, load balancers, and HealthChecks UI dashboards.</Description>
+    <PackageTags>polly;healthchecks;health-checks;aspnetcore;circuit-breaker;resilience;kubernetes;k8s;liveness;readiness;dotnet;polly-v8;Fault;Exception;Handling;Transient;IHealthCheck;monitoring;observability;diagnostics;azure;microservices;service-mesh;health-endpoint;circuit-breaker-health-check</PackageTags>
     <Title>PollyHealthChecks — ASP.NET Core health checks for Polly v8 circuit breakers</Title>
     <PackageSummary>Expose Polly v8 circuit breaker state as /health endpoint responses — ready for Kubernetes liveness and readiness probes, load balancers, and monitoring dashboards.</PackageSummary>
-    <PackageReleaseNotes>1.0.2: Added net6.0 and net9.0 targets; improved discoverability tags including Kubernetes health probe keywords.</PackageReleaseNotes>
+    <PackageReleaseNotes>1.0.6: Improved NuGet metadata, expanded tags, and overhauled README with Kubernetes probe examples, HealthChecks UI integration, and full Related packages table.
+1.0.5: GitHub Sponsors and consulting CTA added to README.
+1.0.2: Added net6.0 and net9.0 targets; improved discoverability tags including Kubernetes health probe keywords.</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/Swevo/PollyHealthChecks</RepositoryUrl>
