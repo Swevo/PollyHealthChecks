@@ -260,6 +260,8 @@ If PollyHealthChecks is useful in your Kubernetes or monitoring setup, consider 
 
 > 💼 **Need .NET / cloud-native help?** Visit [solidqualitysolutions.com](https://solidqualitysolutions.com/) for consulting and architecture services.
 
+| [PollyRabbitMQ](https://www.nuget.org/packages/PollyRabbitMQ) | Polly v8 resilience for RabbitMQ.Client channels |
+
 ## License
 
 MIT
