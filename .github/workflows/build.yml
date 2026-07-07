@@ -20,6 +20,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Check for unresolved merge conflict markers
+        run: |
+          if grep -rIn --exclude-dir=.git -E '^(<{7}|={7}|>{7})( |$)' .; then
+            echo "::error::Unresolved merge conflict markers found (see above)."
+            exit 1
+          fi
+
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
