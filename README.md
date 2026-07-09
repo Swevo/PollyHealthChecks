@@ -5,6 +5,7 @@
 [![NuGet](https://img.shields.io/nuget/v/PollyHealthChecks.svg)](https://www.nuget.org/packages/PollyHealthChecks)
 [![NuGet Downloads](https://img.shields.io/nuget/dt/PollyHealthChecks.svg)](https://www.nuget.org/packages/PollyHealthChecks)
 [![CI](https://github.com/Swevo/PollyHealthChecks/actions/workflows/build.yml/badge.svg)](https://github.com/Swevo/PollyHealthChecks/actions/workflows/build.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 **ASP.NET Core health checks for Polly v8 circuit breakers** — expose circuit-breaker state as `/health` endpoint responses so Kubernetes probes, load balancers, and monitoring dashboards can automatically react to your resilience state.
 
